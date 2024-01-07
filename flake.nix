@@ -25,12 +25,6 @@
         default = pkgs.mkShell {
           packages = with pkgs; [
             rustToolchain
-            openssl
-            pkg-config
-            cargo-deny
-            cargo-edit
-            cargo-generate
-            cargo-watch
             ethtool
           ];
           RUST_SRC_PATH = "${pkgs.rustToolchain}/lib/rustlib/src/rust/library";
